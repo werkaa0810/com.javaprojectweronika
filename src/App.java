@@ -16,10 +16,15 @@ public class App {
         int b = scanner.nextInt();
         System.out.println(a+" + " + b+" = "+(a+b));
         */ 
-     }
-        int nr=2;
+   /* // IF ELSE
+        int nr = 10;
         if(nr == 2){
-            System.out.println("Liczby są równe");
-        }else{System.out.println("Liczby nie są równe");}
+         System.out.println("Liczba to 2");
+        }else if(nr == 3){
+         System.out.println("Liczba to 3");
+      }else{
+         System.out.println("Jakaś inna liczba niż 3 i 2");
+      } 
+      // */
         scanner.close();
-}
+   }

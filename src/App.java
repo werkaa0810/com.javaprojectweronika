@@ -35,14 +35,13 @@ public class App {
       String o = scanner.nextLine();
       System.out.println("Wpisz drugą liczbę");
       int b = scanner.nextInt();
-     
       if(o.equals("+")){
-         System.out.println(a+" + " "+b+" = "+(a+b))
-      }else if(o == "-")){
-         System.out.println(a+" + " "+b+" = "+(a-b));
-      }else{
-         System.out.println("Podałeś zły operator");
-      } 
+         System.out.println(a+" + "+b+" = "+(a+b));
+      }else if(o.equals("-")){
+         System.out.println(a+" + "+b+" = "+(a-b));}
+      else{
+        System.out.println("Podałeś zły operator");
+   }
       
       
         scanner.close();

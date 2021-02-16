@@ -16,7 +16,8 @@ public class App {
         int b = scanner.nextInt();
         System.out.println(a+" + " + b+" = "+(a+b));
         */ 
-   /* // IF ELSE
+        /* // IF ELSE
+
         int nr = 10;
         if(nr == 2){
          System.out.println("Liczba to 2");
@@ -26,5 +27,15 @@ public class App {
          System.out.println("Jakaś inna liczba niż 3 i 2");
       } 
       // */
+
+      System.out.println("Wpisz pierwszą liczbę");
+      int a = scanner.nextInt();
+      System.out.println("Podaj operator + lub -");
+      int b = scanner.nextInt();
+      System.out.println("Wpisz drugą liczbę");
+      int c = scanner.nextInt()
+      System.out.println(a+" + " + b+" = "+(a+b));
+      System.out.println(a+" - " + b+" = "-(a-b));
+      System.out.println("Podaj wynik");
         scanner.close();
    }

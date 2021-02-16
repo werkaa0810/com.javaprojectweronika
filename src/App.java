@@ -31,11 +31,20 @@ public class App {
       System.out.println("Wpisz pierwszą liczbę");
       int a = scanner.nextInt();
       System.out.println("Podaj operator + lub -");
-      int b = scanner.nextInt();
+      scanner.nextLine();
+      String o = scanner.nextLine();
       System.out.println("Wpisz drugą liczbę");
-      int c = scanner.nextInt()
-      System.out.println(a+" + " + b+" = "+(a+b));
-      System.out.println(a+" - " + b+" = "-(a-b));
-      System.out.println("Podaj wynik");
+      int b = scanner.nextInt();
+     
+      if(o.equals("+")){
+         System.out.println(a+" + " "+b+" = "+(a+b))
+      }else if(o == "-")){
+         System.out.println(a+" + " "+b+" = "+(a-b));
+      }else{
+         System.out.println("Podałeś zły operator");
+      } 
+      
+      
         scanner.close();
    }
+}

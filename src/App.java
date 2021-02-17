@@ -28,7 +28,7 @@ public class App {
       } 
       // */
 
-      System.out.println("Wpisz pierwszą liczbę");
+      /* System.out.println("Wpisz pierwszą liczbę");
       int a = scanner.nextInt();
       System.out.println("Podaj operator + lub -");
       scanner.nextLine();
@@ -41,9 +41,37 @@ public class App {
          System.out.println(a+" + "+b+" = "+(a-b));}
       else{
         System.out.println("Podałeś zły operator");
+   } */
+      
+   System.out.println("Podaj pierwszą liczbę");
+   int a = scanner.nextInt();
+   System.out.println("Podaj operator (+,-,*,/,%)");
+   scanner.nextLine();
+   String o = scanner.nextLine();
+   System.out.println("Podaj drugą liczbę");
+   int b = scanner.nextInt();
+
+   switch (o) {
+      
+      case "+":
+      System.out.println(a+" + "+b+" = "+(a+b));
+      case "-":
+      System.out.println(a+" - "+b+" = "+(a-b));
+      case "*":
+      System.out.println(a+" * "+b+" = "+(a*b));
+      case "/":
+      System.out.println(a+" / "+b+" = "+(a/b));
+      case "%":
+      System.out.println(a+" % "+b+" = "+(a%b));
+      
+      break;
+       default:
+      System.out.println("Nie ma takiego operatora");
+   
+      break;
    }
-      
-      
         scanner.close();
+        
+        
    }
 }

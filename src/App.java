@@ -42,7 +42,7 @@ public class App {
       else{
         System.out.println("Podałeś zły operator");
    } */
-      
+   /*  
    System.out.println("Podaj pierwszą liczbę");
    int a = scanner.nextInt();
    System.out.println("Podaj operator (+,-,*,/,%)");
@@ -55,12 +55,16 @@ public class App {
       
       case "+":
       System.out.println(a+" + "+b+" = "+(a+b));
+      break;
       case "-":
       System.out.println(a+" - "+b+" = "+(a-b));
+      break;
       case "*":
       System.out.println(a+" * "+b+" = "+(a*b));
+      break;
       case "/":
       System.out.println(a+" / "+b+" = "+(a/b));
+      break;
       case "%":
       System.out.println(a+" % "+b+" = "+(a%b));
       
@@ -70,7 +74,55 @@ public class App {
    
       break;
    }
-        scanner.close();
+   */
+  /*
+int wynik = 0;
+  String[][] dane = {
+   {"Więcej niż jedno zwierzę","stado","klucz","dwa","owca","lama"},
+   {"Sporty na s","sztafeta","skok o tyczce", "skoki narciarskie", "sumo", "szachy"}
+ };
+   for(int i = 0; i < dane.length; i++){
+      System.out.println(dane[i][0]); 
+   String odp = scanner.nextLine(); 
+   boolean isAnswerCorrect = false;
+   for(int it = 1; it < dane[i].length; it++){
+     // System.out.println("ODP: "+dane[i][it]);
+      if(dane[i][it].equals (odp);{
+         isAnswerCorrect = true;
+         System.out.println("BRZDĘK");
+         wynik+= it*10
+      }else if{
+         System.out.println("X");
+   }
+ 
+   } 
+
+      System.out.println("Twój wynik to") */
+
+
+   int wynik = 0;
+      String[][] dane = {
+         {"Więcej niż jedno zwierzę","stado","klucz","dwa","owca","lama"},
+         {"Sporty na s","sztafeta","skok o tyczce", "skoki narciarskie", "sumo", "szachy"}
+       };
+   for(int i = 0; i < dane.length; i++){
+      System.out.println(dane[i][0]); 
+         String odp = scanner.nextLine(); 
+      boolean isAnswerCorrect = false;
+   for(int it = 1; it < dane[i].length; it++){
+      if(dane[i][it].equals(odp)){
+          isAnswerCorrect = true;
+          System.out.println("BRZDĘK");
+            wynik += it*10;
+        }
+      }
+      if(!isAnswerCorrect){
+         System.out.println("X");
+      }
+    }      
+    System.out.println("Twój wynik "+wynik);
+
+    scanner.close();
         
         
    }

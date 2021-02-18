@@ -113,26 +113,31 @@ public class App {
        System.out.println("ERROR;");
 */
 
+/*
       int random = (int)(Math.random() * 100) + 1;
-         System.out.println(random);
       System.out.println("System wylosuje dowolną liczbę w przedziale od 1 do 100. Spróbuj odgadnąć jaka to liczba mając 5 szans.");
+         System.out.println(random);
+     
       
-      int próba = 1
+      int próba = 1;
 
       while(próba <=5){
          System.out.println("Próba nr: "+próba);
          int userInt = scanner.nextInt();
       if(userInt > random){
-         System.out.println("Jest większa od ostatniej wpisanej");
+         System.out.println("Jest większa od wylosowanej");
       }else if(userInt < random){
-         System.out.println("Jest mniejsza od ostatniej wpisanej");
+         System.out.println("Jest mniejsza od wylosowanej");
       }
-      if(userInt == random) 
-      {break;}{
+      if(userInt == random){
          System.out.println("WYGRANA");
+         break;
       }
      
       próba++;
       }
+      */
+
+      
     }
    }        

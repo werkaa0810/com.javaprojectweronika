@@ -2,7 +2,7 @@ import java.util.Scanner;
 
 public class App {
      public static void main(String[] args) throws Exception {  
-        Scanner scanner = new Scanner(System.in);
+      Scanner scanner = new Scanner(System.in);
         /*System.out.println("Podaj swoje imię:");
      Scanner scanner = new Scanner(System.in);
      String firstName = scanner.nextLine();
@@ -75,7 +75,7 @@ public class App {
       break;
    }
    */
-
+   /*
    int wynik = 0;
       String[][] dane = {
          {"Więcej niż jedno zwierzę","stado","klucz","dwa","owca","lama"},
@@ -98,8 +98,41 @@ public class App {
     }      
     System.out.println("Twój wynik "+wynik);
 
-    scanner.close();
-        
-        
-   }
-}
+    */ 
+    
+   /*
+    int random = (int)(Math.random() * 11) + 5;
+    System.out.println(random);
+*/
+/*
+    int nr = 5;
+    if(nr ==5){
+       System.out.println("Error;");
+    }
+    while(nr == 5){
+       System.out.println("ERROR;");
+*/
+
+      int random = (int)(Math.random() * 100) + 1;
+         System.out.println(random);
+      while (nr < 1){
+         System.out.println("Wylosowany numer to: "+int random);
+         n++;
+      while (nr < 10){
+         System.out.println("Wylosowany numer to: "+int random);
+         n++;
+      }
+      while (nr < 30){
+            System.out.println("Wylosowany numer to: "+int random);
+            n++;
+      }
+      while (nr < 50){
+         System.out.println("Wylosowany numer to: "+int random);
+         n++;
+    }
+      while (nr < 70){
+      System.out.println("Wylosowany numer to: "+int random);
+      n++;
+    } 
+
+   }        

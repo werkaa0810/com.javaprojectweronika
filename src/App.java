@@ -115,24 +115,23 @@ public class App {
 
       int random = (int)(Math.random() * 100) + 1;
          System.out.println(random);
-      while (nr < 1){
-         System.out.println("Wylosowany numer to: "+int random);
-         n++;
-      while (nr < 10){
-         System.out.println("Wylosowany numer to: "+int random);
-         n++;
-      }
-      while (nr < 30){
-            System.out.println("Wylosowany numer to: "+int random);
-            n++;
-      }
-      while (nr < 50){
-         System.out.println("Wylosowany numer to: "+int random);
-         n++;
-    }
-      while (nr < 70){
-      System.out.println("Wylosowany numer to: "+int random);
-      n++;
-    } 
+      System.out.println("System wylosuje dowolną liczbę w przedziale od 1 do 100. Spróbuj odgadnąć jaka to liczba mając 5 szans.");
+      
+      int próba = 1
 
+      while(próba <=5){
+         System.out.println("Próba nr: "+próba);
+         int userInt = scanner.nextInt();
+      if(userInt > random){
+         System.out.println("Jest większa od ostatniej wpisanej");
+      }else if(userInt < random){
+         System.out.println("Jest mniejsza od ostatniej wpisanej");
+      }
+      if(userInt == random){
+         System.out.println("WYGRANA");
+      }
+      {break;}
+      próba++;
+      }
+    }
    }        

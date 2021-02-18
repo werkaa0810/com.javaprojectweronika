@@ -127,10 +127,11 @@ public class App {
       }else if(userInt < random){
          System.out.println("Jest mniejsza od ostatniej wpisanej");
       }
-      if(userInt == random){
+      if(userInt == random) 
+      {break;}{
          System.out.println("WYGRANA");
       }
-      {break;}
+     
       próba++;
       }
     }

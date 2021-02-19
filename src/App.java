@@ -3,7 +3,7 @@ import java.util.Scanner;
 public class App {
      public static void main(String[] args) throws Exception {  
       Scanner scanner = new Scanner(System.in);
-      System.out.println("Podaj nazwe wojewodztwa:");
+      /* System.out.println("Podaj nazwe wojewodztwa:");
       System.out.println(city(scanner.nextLine()));
 
       scanner.close();
@@ -30,7 +30,7 @@ public class App {
       }
          return output;
       }
-
+/*
 
         /*System.out.println("Podaj swoje imię:");
      Scanner scanner = new Scanner(System.in);
@@ -169,5 +169,31 @@ public class App {
     }
       */
 
-      
+    NewClass nc0bj = new NewClass ();
+    System.out.println(nc0bj);
+    NewClass ncObj = new NewClass(); 
+    
+    System.out.println(ncObj.name+" to "+ncObj.race+", który ma "+ncObj.age+" lat" );
+
+  }
+}
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+     } 
    }        

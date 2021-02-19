@@ -3,6 +3,35 @@ import java.util.Scanner;
 public class App {
      public static void main(String[] args) throws Exception {  
       Scanner scanner = new Scanner(System.in);
+      System.out.println("Podaj nazwe wojewodztwa:");
+      System.out.println(city(scanner.nextLine()));
+
+      scanner.close();
+    
+      static String city ( String userWoj){
+         String[][] arr = {
+         {"Slonskie","Katowice"},
+         {"Wielkopolskie","Poznan"},
+         {"Malopolskie","Krakow"};
+         {"Mazowieckie","Warszawa"};
+         {"Lodzkie","Lodz"}
+      };
+
+      String output = "Nie znalezlismy takiego wojewodztwa";
+      int i = 0;
+      while( i < arr.length ){
+         if (arr[i][0].equals(userWoj)){
+            output = "Stolica wojewodztwa"+arr[1][0]+" jest "+arr[i][1];
+         break;
+         }
+         
+
+         i++;
+      }
+         return output;
+      }
+
+
         /*System.out.println("Podaj swoje imię:");
      Scanner scanner = new Scanner(System.in);
      String firstName = scanner.nextLine();
@@ -136,8 +165,9 @@ public class App {
      
       próba++;
       }
+        scanner.close();
+    }
       */
 
       
-    }
    }        
